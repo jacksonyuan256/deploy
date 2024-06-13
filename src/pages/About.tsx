@@ -1,5 +1,4 @@
 import { Accordion } from "react-bootstrap"
-import styles from "../styles.module.css"
 
 export function About() {
     return (
