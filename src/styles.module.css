@@ -1,0 +1,13 @@
+.logo {
+    background-image: url('./img/bg4.png');
+    width: 100%;
+    height: 100vh;
+}
+
+.name {
+    font-size: sans-serif;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: blue;
+}
