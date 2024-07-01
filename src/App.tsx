@@ -9,7 +9,7 @@ import styles from "./styles.module.css"
 
 function App() {
   return (
-    <div className={styles.logo}>
+    <div className={styles.logo} style={{marginTop: "20px"}}>
       <Navbar />
         <Container className="mb-4">
           <Routes>

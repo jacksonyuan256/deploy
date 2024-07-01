@@ -1,4 +1,5 @@
 import { Accordion } from "react-bootstrap"
+import { Dropdown } from "../components/Dropdown"
 
 export function About() {
     return (
@@ -11,18 +12,15 @@ export function About() {
             >
                 TECHNICAL SKILLS
             </span>
-            <Accordion>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>PROGRAMMING LANGUAGES</Accordion.Header>
-                    <Accordion.Body>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>Typescript</li>
-                        </ul>
-                    </Accordion.Body>
-                </Accordion.Item>
+            <Accordion
+                style={{
+                    marginTop: "10px",
+                }}
+            >
+                <Dropdown headerText={"PROGRAMMING LANGUAGES"} itemsList={["Python", "Java", "C#", "Typescript"]} eventKey={"0"}/>
+                <Dropdown headerText={"SOFTWARE TOOLS"} itemsList={["Vim", "VS Code"]} eventKey={"1"}/>
+                <Dropdown headerText={"OTHERS"} itemsList={["Canva", "OBS Studio", "Lucidchart (UML Diagrams)"]} eventKey={"2"}/>
+
             </Accordion>
         </>
     )

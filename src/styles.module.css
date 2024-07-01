@@ -1,7 +1,7 @@
 .logo {
     background-image: url('./img/bg4.png');
     width: 100%;
-    height: 100vh;
+    height: 150vh;
 }
 
 .name {
@@ -10,4 +10,10 @@
 
 .accordion {
     --bs-accordion-btn-bg: blue;
+}
+
+.addspace {
+    margin: 40px;
+    text-shadow: 2px 2px #696969;
+    font-family: sans-serif;
 }
