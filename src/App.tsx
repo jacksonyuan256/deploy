@@ -9,11 +9,11 @@ import styles from "./styles.module.css"
 
 function App() {
   return (
-    <div className={styles.logo} style={{marginTop: "20px"}}>
+    <div className={styles.logo} >
       <Navbar />
-        <Container className="mb-4">
+        <Container className="mb-4" style={{paddingTop: "30px"}}>
           <Routes>
-            <Route path="/" element={<Home/>} />
+            <Route path="/home" element={<Home/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/contact" element={<Contact/>} />
